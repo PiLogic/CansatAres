@@ -94,4 +94,4 @@ class Running:
         self.running.mainloop()
   
 if __name__ == '__main__':
-    application = MainWindow()# sample-code
+    application = MainWindow()

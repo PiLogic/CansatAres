@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from Connect import ConnectWindow
 
 class MainWindow:
 
@@ -76,6 +77,7 @@ class MainWindow:
 
     def connect(self):
         print('Connecting...')
+        connection = ConnectWindow()
 
     def begin(self):
         print('Beginning...')

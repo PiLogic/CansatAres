@@ -22,7 +22,6 @@ class ConnectWindow:
     def main(self):
         self.sensors = [('Wind Sens.','Rev.C',True),('Humidity, Pressure & Temp Sens.', 'BME280',True),('Air Quality Sens.','CCS811',False),('CO & Gas Sens.','MiCS5524',False)]
         self.statusUI()
-        print('bob')
 
     def statusUI(self):
  
@@ -73,32 +72,6 @@ class ConnectWindow:
             self.sensorTextOnes[-1].place(x = 50, y = 150 + (i+1)*gap)
             self.sensorTextTwos[-1].place(x = 535, y = 150 + (i+1)*gap)
             self.sensorStatuses[-1].place(x = 700, y = 150 + (i+1)*gap)
-
-
-
-
-
-    def optionPress(self, value):
-        if value == 'Connect':
-            self.connect()
-        elif value == 'Troubleshoot':
-            self.troubleshoot()
-        elif value == 'Begin':
-            self.begin()
-        else:
-            print('Error 1 - Unknown Option')
-
-    def troubleshoot(self):
-        print('Troubleshooting...')
-
-    def connect(self):
-        print('Connecting...')
-
-    def begin(self):
-        print('Beginning...')
-        self.root.destroy()
-        self.running = Running()
-        
 
 if __name__ == '__main__':
     application = ConnectWindow()
